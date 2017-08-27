@@ -1,11 +1,9 @@
 /*
-  PUBLIC DOMAIN STATEMENT
-  To the extent possible under law, Ian Davis has waived all copyright
-  and related or neighboring rights to this Source Code file.
-  This work is published from the United Kingdom.
+  This is free and unencumbered software released into the public domain. For more
+  information, see <http://unlicense.org/> or the accompanying UNLICENSE file.
 */
 
-// Client for the Eventful API
+// Package eventful provides a client for the Eventful API
 package eventful
 
 import (
@@ -46,14 +44,14 @@ type Event struct {
 	VenueID     string     `json:"venue_id"`
 	VenueName   string     `json:"venue_name"`
 	VenueURL    string     `json:"venue_url"`
-	StartTime   string     `json:"start_time""`
-	StopTime    string     `json:"stop_time""`
-	AllDay      string     `json:"all_day""`
-	Latitude    string     `json:"latitude""`
-	Longitude   string     `json:"longitude""`
-	CityName    string     `json:"city_name""`
-	Description string     `json:"description""`
-	Image       *ImageInfo `json:"image""`
+	StartTime   string     `json:"start_time"`
+	StopTime    string     `json:"stop_time"`
+	AllDay      string     `json:"all_day"`
+	Latitude    string     `json:"latitude"`
+	Longitude   string     `json:"longitude"`
+	CityName    string     `json:"city_name"`
+	Description string     `json:"description"`
+	Image       *ImageInfo `json:"image"`
 }
 
 type ImageInfo struct {
